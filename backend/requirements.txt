@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+stripe
+firebase-admin
+python-multipart
+requests
+pytest

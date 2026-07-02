@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cricket-dark: #0f172a;
+  --color-cricket-blue: #3b82f6;
+  --color-cricket-gold: #fbbf24;
+  --color-cricket-glass: rgba(255, 255, 255, 0.1);
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans min-h-screen selection:bg-blue-500 selection:text-white;
+    background-image: 
+      radial-gradient(circle at top right, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at bottom left, rgba(251, 191, 36, 0.1) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  .glass-nav {
+    @apply bg-slate-900/80 backdrop-blur-lg border-b border-white/10;
+  }
+}
